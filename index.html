@@ -1,0 +1,341 @@
+<title>Política de Privacidade DBCSUPER</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: documento em coluna única, cabeçalho com identificação do app, seções PT seguidas do bloco EN */
+  :root {
+    --bg: #f7f6f4;
+    --surface: #ffffff;
+    --fg: #22212b;
+    --fg-muted: #5f5d6e;
+    --rule: #e0ddd8;
+    --accent: #5b4bb7;
+    --accent-soft: #efecfb;
+    --warn: #8a5a12;
+    --warn-soft: #fbf0dc;
+
+    --font-display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16151c;
+      --surface: #1e1d26;
+      --fg: #eceaf2;
+      --fg-muted: #a3a0b3;
+      --rule: #33313f;
+      --accent: #a596f5;
+      --accent-soft: #272342;
+      --warn: #e9b96b;
+      --warn-soft: #3a2f1a;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #16151c;
+    --surface: #1e1d26;
+    --fg: #eceaf2;
+    --fg-muted: #a3a0b3;
+    --rule: #33313f;
+    --accent: #a596f5;
+    --accent-soft: #272342;
+    --warn: #e9b96b;
+    --warn-soft: #3a2f1a;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 48px 72px;
+  }
+
+  .doc {
+    max-width: 44rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid var(--fg);
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 5.5vw, 2.6rem);
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .ident {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--fg-muted);
+  }
+
+  .ident span { white-space: nowrap; }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 4px;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--fg);
+  }
+
+  p, li { margin: 0; color: var(--fg); }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  strong { font-weight: 600; }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: var(--surface);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    min-width: 34rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  th {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    background: var(--accent-soft);
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  td:first-child { font-weight: 500; }
+
+  .note {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    font-size: 0.93rem;
+  }
+
+  .contact {
+    font-family: var(--font-mono);
+    font-size: 0.92em;
+    color: var(--accent);
+  }
+
+  .divider-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    margin-top: 16px;
+  }
+
+  .divider-label::before,
+  .divider-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 24px;
+    font-size: 0.85rem;
+    color: var(--fg-muted);
+  }
+
+  a { color: var(--accent); }
+</style>
+
+<div class="doc">
+  <header>
+    <div class="eyebrow">Política de Privacidade</div>
+    <h1>DBCSUPER</h1>
+    <div class="ident">
+      <span>Application ID 1486419165374840902</span>
+      <span>Última atualização: 15/10/2026</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>1. Quem somos e a que isto se aplica</h2>
+    <p>DBCSUPER é um bot do Discord de uso privado, mantido para a administração interna da nossa comunidade. Ele não é um bot público: não está listado em nenhum diretório de bots e não possui link de convite aberto.</p>
+    <p>Esta política descreve quais dados o bot coleta, por que coleta, onde ficam armazenados e como solicitar sua exclusão. Ela se aplica apenas ao bot DBCSUPER — o uso do Discord em si é regido pela <a href="https://discord.com/privacy">Política de Privacidade da Discord</a>.</p>
+  </section>
+
+  <section>
+    <h2>2. Dados que o bot armazena</h2>
+    <p>O bot armazena apenas o necessário para que cada funcionalidade exista. Todos os dados ficam em um banco de dados MongoDB privado, sob nosso controle.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Funcionalidade</th>
+            <th>Dados armazenados</th>
+            <th>Por quê</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sugestões</td>
+            <td>ID do autor, texto da sugestão, IDs de quem votou a favor e contra, ID da mensagem</td>
+            <td>Exibir a sugestão, contabilizar votos sem duplicidade e montar o ranking das mais votadas</td>
+          </tr>
+          <tr>
+            <td>Avaliação de staff</td>
+            <td>ID do membro da staff, nick cadastrado, contagem de avaliações positivas e negativas, motivo e data de cada avaliação, ID de quem avaliou</td>
+            <td>Manter o painel de avaliação e o ranking de aprovação da equipe</td>
+          </tr>
+          <tr>
+            <td>Denúncias</td>
+            <td>ID de quem denunciou, nick do denunciado, motivo, link do anexo enviado, status, ID de quem analisou, data</td>
+            <td>Permitir que a equipe analise, aprove ou recuse a denúncia e consulte o histórico</td>
+          </tr>
+          <tr>
+            <td>Configuração</td>
+            <td>IDs de canais e mensagens usados pelo bot</td>
+            <td>Permitir que o bot reencontre e atualize as próprias mensagens após reiniciar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>O bot não coleta e-mail, telefone, endereço IP, dados de pagamento, dados de presença/status, nem mensagens privadas (DMs).</p>
+  </section>
+
+  <section>
+    <h2>3. Conteúdo de mensagens</h2>
+    <p>O bot lê o conteúdo de mensagens em canais do servidor para três finalidades. Em apenas duas delas algo é armazenado:</p>
+    <ul>
+      <li><strong>Filtro anti-link e antigolpe</strong> — o bot verifica mensagens em canais públicos para apagar links, convites e conteúdo de golpe. Essa verificação acontece <strong>em memória</strong> e a mensagem é descartada em seguida: <strong>nada é gravado</strong>. Administradores, cargos e canais liberados são ignorados pelo filtro.</li>
+      <li><strong>Sugestões</strong> — o texto escrito no canal de sugestões é armazenado, porque o texto <em>é</em> a sugestão exibida e votada.</li>
+      <li><strong>Formulários</strong> — as respostas digitadas no canal privado do formulário são enviadas para o canal da equipe dentro do próprio Discord. Elas <strong>não</strong> são gravadas no banco de dados.</li>
+    </ul>
+    <div class="note">
+      <p>O armazenamento de conteúdo só acontece quando você escolhe usar uma funcionalidade: escrever no canal de sugestões ou abrir uma denúncia. Quem não usa essas funcionalidades não tem nenhum conteúdo de mensagem armazenado em momento algum.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Compartilhamento e uso</h2>
+    <ul>
+      <li>Os dados são usados <strong>exclusivamente</strong> para a administração do nosso servidor.</li>
+      <li>Nada é vendido, alugado ou compartilhado com terceiros.</li>
+      <li>Nada é usado para treinar modelos de inteligência artificial ou aprendizado de máquina.</li>
+      <li>O acesso ao banco de dados é restrito à administração do bot. O banco e a aplicação ficam em infraestrutura de hospedagem contratada, que atua apenas como provedora e não acessa o conteúdo para finalidade própria.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Retenção e exclusão</h2>
+    <p>Sugestões, avaliações e denúncias ficam armazenadas enquanto forem úteis à administração do servidor, ou até que a exclusão seja solicitada. Quando um membro da staff é removido do sistema de avaliação, seus registros são apagados.</p>
+    <p>Você pode pedir a exclusão dos seus dados (sugestões, votos, denúncias e avaliações associadas ao seu ID) a qualquer momento, pelo contato abaixo. O pedido é atendido sem necessidade de justificativa.</p>
+  </section>
+
+  <section>
+    <h2>6. Alterações</h2>
+    <p>Mudanças nesta política são publicadas nesta mesma página, com a data de atualização revisada no topo. Alterações relevantes são avisadas no servidor.</p>
+  </section>
+
+  <section>
+    <h2>7. Contato</h2>
+    <p>Dúvidas sobre esta política ou pedidos de exclusão de dados podem ser enviados por qualquer um destes canais:</p>
+    <ul>
+      <li><strong>E-mail:</strong> <a href="mailto:brunolopespennaa@gmail.com">brunolopespennaa@gmail.com</a></li>
+      <li><strong>Discord:</strong> <span class="contact">@lopes</span></li>
+      <li><strong>No servidor:</strong> abrindo um ticket com a equipe</li>
+    </ul>
+    <p>Pedidos de exclusão são atendidos sem necessidade de justificativa.</p>
+  </section>
+
+  <div class="divider-label">English</div>
+
+  <section>
+    <h2>Privacy Policy (English summary)</h2>
+    <p>DBCSUPER (Application ID 1486419165374840902) is a private Discord bot used solely for the internal administration of our own community. It is not listed in any bot directory and has no public invite link.</p>
+
+    <h3>What we store</h3>
+    <p>In a private MongoDB database under our control: Discord user IDs; suggestion text with the IDs of up- and down-voters; staff nicknames, review counts, review reasons and dates; report records (reporter ID, reported nickname, reason, attachment URL, status, handler, timestamp); and channel and message IDs used by the bot. We do not collect emails, phone numbers, IP addresses, payment data, presence data or direct messages.</p>
+
+    <h3>Message content</h3>
+    <p>The bot reads message content for three features. The anti-link and anti-scam filter evaluates messages <strong>in memory and discards them — nothing is written to storage</strong>. Suggestion text posted in the dedicated suggestions channel is stored, because the text is the suggestion being displayed and voted on. Application-form answers are posted to a staff channel within Discord and are <strong>not</strong> written to the database. Content storage only occurs when a user chooses to use an opt-in feature; users who do not use them have no message content stored at any time.</p>
+
+    <h3>Sharing and use</h3>
+    <p>Data is used only to administer our server. It is never sold, rented or shared with third parties, and is never used to train machine learning or AI models. Database access is limited to the bot's administrators; hosting providers act solely as infrastructure providers.</p>
+
+    <h3>Retention and deletion</h3>
+    <p>Records are kept while they remain useful for server administration, or until deletion is requested. Any user may request deletion of their data at any time, with no justification required.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy or data deletion requests: <a href="mailto:brunolopespennaa@gmail.com">brunolopespennaa@gmail.com</a>, Discord <span class="contact">@lopes</span>, or by opening a ticket in our server.</p>
+  </section>
+
+  <footer>
+    DBCSUPER · Application ID 1486419165374840902 · Última atualização 15 de outubro de 2026
+  </footer>
+</div>
